@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Mina:wght@400;700&display=swap');
+
+$primary-color: #0e001e;
+$second-color: #f0ecff;
+$breakpoint-table: 768px;
+$breakpoint-mobile-sm: 500px;
+$breakpoint-mobile-xs: 400px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mina', sans-serif;
+  text-shadow: 0px 1px 1px $primary-color;
+}
+
+body {
+  background-color: lighten($primary-color, $amount: 10%);
+}
+

@@ -1,0 +1,49 @@
+.game-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $second-color;
+  background-color: $primary-color;
+  &__title {
+    font-size: 3rem;
+    padding: 1rem;
+  }
+  &__expression {
+    padding: 0.25rem;
+    font-size: 2rem;
+  }
+  &__progress {
+    width: 25rem;
+  }
+  &__score {
+    text-align: center;
+    width: 100%;
+    padding: 0.25rem 0rem;
+    color: $primary-color;
+    font-size: 1rem;
+    background-color: $second-color;
+  }
+}
+
+@media(max-width: $breakpoint-table) {
+  .game-header {
+    &__title {
+      font-size: 2rem;
+    }
+    &__expression {
+      font-size: 1.5rem;
+    }
+    &__progress {
+      width: 22rem;
+    }
+  }
+}
+
+@media(max-width: $breakpoint-mobile-sm) {
+  .menu__content {
+    &__progress {
+      width: 18rem;
+    }
+  }
+}
